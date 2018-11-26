@@ -1,0 +1,511 @@
+State,CPI,year
+Alabama,89.9,2007
+Alaska,106.0,2007
+Arizona,100.2,2007
+Arkansas,88.7,2007
+California,110.2,2007
+Colorado,99.4,2007
+Connecticut,110.4,2007
+Delaware,104.6,2007
+District of Columbia,111.7,2007
+Florida,100.0,2007
+Georgia,94.4,2007
+Hawaii,116.4,2007
+Idaho,92.9,2007
+Illinois,100.2,2007
+Indiana,92.1,2007
+Iowa,89.1,2007
+Kansas,90.3,2007
+Kentucky,89.0,2007
+Louisiana,92.2,2007
+Maine,97.2,2007
+Maryland,110.2,2007
+Massachusetts,107.1,2007
+Michigan,95.9,2007
+Minnesota,96.4,2007
+Mississippi,88.1,2007
+Missouri,88.7,2007
+Montana,92.2,2007
+Nebraska,89.9,2007
+Nevada,100.8,2007
+New Hampshire,106.3,2007
+New Jersey,111.9,2007
+New Mexico,93.7,2007
+New York,113.5,2007
+North Carolina,92.3,2007
+North Dakota,86.9,2007
+Ohio,90.8,2007
+Oklahoma,90.4,2007
+Oregon,97.4,2007
+Pennsylvania,98.1,2007
+Rhode Island,100.8,2007
+South Carolina,91.5,2007
+South Dakota,86.8,2007
+Tennessee,91.0,2007
+Texas,97.0,2007
+Utah,95.7,2007
+Vermont,99.8,2007
+Virginia,101.7,2007
+Washington,101.5,2007
+West Virginia,88.7,2007
+Wisconsin,92.6,2007
+Wyoming,94.4,2007
+Alabama,87.6,2008
+Alaska,106.9,2008
+Arizona,100.6,2008
+Arkansas,86.9,2008
+California,113.1,2008
+Colorado,100.4,2008
+Connecticut,110.7,2008
+Delaware,102.0,2008
+District of Columbia,115.6,2008
+Florida,100.8,2008
+Georgia,93.5,2008
+Hawaii,118.1,2008
+Idaho,95.2,2008
+Illinois,100.2,2008
+Indiana,91.2,2008
+Iowa,88.6,2008
+Kansas,89.3,2008
+Kentucky,88.9,2008
+Louisiana,90.7,2008
+Maine,98.0,2008
+Maryland,110.3,2008
+Massachusetts,108.3,2008
+Michigan,95.4,2008
+Minnesota,97.4,2008
+Mississippi,86.4,2008
+Missouri,87.8,2008
+Montana,95.3,2008
+Nebraska,89.7,2008
+Nevada,100.8,2008
+New Hampshire,107.2,2008
+New Jersey,112.9,2008
+New Mexico,94.4,2008
+New York,115.1,2008
+North Carolina,92.0,2008
+North Dakota,88.5,2008
+Ohio,90.0,2008
+Oklahoma,88.9,2008
+Oregon,98.3,2008
+Pennsylvania,98.2,2008
+Rhode Island,100.2,2008
+South Carolina,91.1,2008
+South Dakota,86.9,2008
+Tennessee,90.5,2008
+Texas,96.5,2008
+Utah,96.8,2008
+Vermont,100.4,2008
+Virginia,102.8,2008
+Washington,103.2,2008
+West Virginia,87.0,2008
+Wisconsin,93.0,2008
+Wyoming,96.1,2008
+Alabama,87.5,2009
+Alaska,106.9,2009
+Arizona,100.1,2009
+Arkansas,86.6,2009
+California,112.9,2009
+Colorado,101.1,2009
+Connecticut,110.4,2009
+Delaware,103.2,2009
+District of Columbia,116.4,2009
+Florida,100.0,2009
+Georgia,93.1,2009
+Hawaii,117.1,2009
+Idaho,94.8,2009
+Illinois,100.9,2009
+Indiana,91.4,2009
+Iowa,89.0,2009
+Kansas,89.6,2009
+Kentucky,88.7,2009
+Louisiana,91.4,2009
+Maine,98.1,2009
+Maryland,111.3,2009
+Massachusetts,108.0,2009
+Michigan,95.2,2009
+Minnesota,97.7,2009
+Mississippi,85.8,2009
+Missouri,87.9,2009
+Montana,94.5,2009
+Nebraska,89.6,2009
+Nevada,100.7,2009
+New Hampshire,106.4,2009
+New Jersey,113.3,2009
+New Mexico,94.4,2009
+New York,115.3,2009
+North Carolina,92.1,2009
+North Dakota,89.0,2009
+Ohio,89.3,2009
+Oklahoma,89.5,2009
+Oregon,98.9,2009
+Pennsylvania,98.2,2009
+Rhode Island,100.0,2009
+South Carolina,91.5,2009
+South Dakota,85.8,2009
+Tennessee,90.5,2009
+Texas,96.4,2009
+Utah,97.8,2009
+Vermont,100.6,2009
+Virginia,103.5,2009
+Washington,103.7,2009
+West Virginia,87.5,2009
+Wisconsin,92.9,2009
+Wyoming,96.1,2009
+Alabama,87.9,2010
+Alaska,105.5,2010
+Arizona,98.6,2010
+Arkansas,87.7,2010
+California,113.6,2010
+Colorado,100.9,2010
+Connecticut,109.4,2010
+Delaware,102.8,2010
+District of Columbia,118.2,2010
+Florida,99.1,2010
+Georgia,92.3,2010
+Hawaii,117.2,2010
+Idaho,93.5,2010
+Illinois,100.9,2010
+Indiana,91.4,2010
+Iowa,89.2,2010
+Kansas,89.9,2010
+Kentucky,88.6,2010
+Louisiana,91.2,2010
+Maine,96.8,2010
+Maryland,111.0,2010
+Massachusetts,108.0,2010
+Michigan,94.7,2010
+Minnesota,97.1,2010
+Mississippi,86.7,2010
+Missouri,88.3,2010
+Montana,93.9,2010
+Nebraska,90.3,2010
+Nevada,99.9,2010
+New Hampshire,106.5,2010
+New Jersey,114.1,2010
+New Mexico,94.6,2010
+New York,115.2,2010
+North Carolina,91.3,2010
+North Dakota,89.2,2010
+Ohio,89.8,2010
+Oklahoma,89.6,2010
+Oregon,98.5,2010
+Pennsylvania,98.5,2010
+Rhode Island,99.1,2010
+South Carolina,90.4,2010
+South Dakota,86.9,2010
+Tennessee,90.2,2010
+Texas,96.3,2010
+Utah,96.9,2010
+Vermont,99.5,2010
+Virginia,103.1,2010
+Washington,103.0,2010
+West Virginia,88.4,2010
+Wisconsin,92.8,2010
+Wyoming,95.9,2010
+Alabama,87.7,2011
+Alaska,105.1,2011
+Arizona,97.9,2011
+Arkansas,87.6,2011
+California,113.4,2011
+Colorado,101.4,2011
+Connecticut,109.0,2011
+Delaware,101.8,2011
+District of Columbia,117.8,2011
+Florida,99.2,2011
+Georgia,91.9,2011
+Hawaii,116.9,2011
+Idaho,93.3,2011
+Illinois,101.1,2011
+Indiana,91.7,2011
+Iowa,90.0,2011
+Kansas,90.7,2011
+Kentucky,88.6,2011
+Louisiana,91.0,2011
+Maine,97.4,2011
+Maryland,110.9,2011
+Massachusetts,107.8,2011
+Michigan,94.6,2011
+Minnesota,97.2,2011
+Mississippi,86.8,2011
+Missouri,89.1,2011
+Montana,93.8,2011
+Nebraska,90.3,2011
+Nevada,99.8,2011
+New Hampshire,105.3,2011
+New Jersey,114.6,2011
+New Mexico,95.3,2011
+New York,115.2,2011
+North Carolina,91.5,2011
+North Dakota,89.7,2011
+Ohio,89.7,2011
+Oklahoma,89.6,2011
+Oregon,98.5,2011
+Pennsylvania,98.4,2011
+Rhode Island,99.4,2011
+South Carolina,90.8,2011
+South Dakota,87.3,2011
+Tennessee,90.3,2011
+Texas,96.2,2011
+Utah,97.2,2011
+Vermont,99.9,2011
+Virginia,103.0,2011
+Washington,102.9,2011
+West Virginia,88.5,2011
+Wisconsin,93.3,2011
+Wyoming,96.7,2011
+Alabama,88.1,2012
+Alaska,105.4,2012
+Arizona,97.1,2012
+Arkansas,87.8,2012
+California,112.9,2012
+Colorado,101.1,2012
+Connecticut,109.2,2012
+Delaware,101.2,2012
+District of Columbia,117.7,2012
+Florida,99.1,2012
+Georgia,92.2,2012
+Hawaii,117.8,2012
+Idaho,93.4,2012
+Illinois,100.7,2012
+Indiana,91.4,2012
+Iowa,90.2,2012
+Kansas,90.6,2012
+Kentucky,88.8,2012
+Louisiana,91.4,2012
+Maine,98.4,2012
+Maryland,110.1,2012
+Massachusetts,106.6,2012
+Michigan,94.5,2012
+Minnesota,97.6,2012
+Mississippi,86.5,2012
+Missouri,89.3,2012
+Montana,93.5,2012
+Nebraska,90.6,2012
+Nevada,98.7,2012
+New Hampshire,105.6,2012
+New Jersey,114.4,2012
+New Mexico,95.0,2012
+New York,115.3,2012
+North Carolina,91.7,2012
+North Dakota,91.0,2012
+Ohio,89.4,2012
+Oklahoma,89.9,2012
+Oregon,98.7,2012
+Pennsylvania,98.4,2012
+Rhode Island,98.8,2012
+South Carolina,90.8,2012
+South Dakota,88.9,2012
+Tennessee,90.8,2012
+Texas,96.2,2012
+Utah,97.1,2012
+Vermont,100.8,2012
+Virginia,103.0,2012
+Washington,103.5,2012
+West Virginia,88.6,2012
+Wisconsin,93.5,2012
+Wyoming,95.8,2012
+Alabama,87.8,2013
+Alaska,104.9,2013
+Arizona,96.5,2013
+Arkansas,87.8,2013
+California,113.1,2013
+Colorado,102.1,2013
+Connecticut,108.5,2013
+Delaware,100.6,2013
+District of Columbia,117.0,2013
+Florida,99.2,2013
+Georgia,92.3,2013
+Hawaii,118.3,2013
+Idaho,93.2,2013
+Illinois,99.7,2013
+Indiana,91.3,2013
+Iowa,90.6,2013
+Kansas,91.3,2013
+Kentucky,89.3,2013
+Louisiana,91.2,2013
+Maine,98.5,2013
+Maryland,109.9,2013
+Massachusetts,106.7,2013
+Michigan,94.3,2013
+Minnesota,97.5,2013
+Mississippi,87.2,2013
+Missouri,89.9,2013
+Montana,94.6,2013
+Nebraska,90.7,2013
+Nevada,98.7,2013
+New Hampshire,105.4,2013
+New Jersey,113.4,2013
+New Mexico,95.3,2013
+New York,115.2,2013
+North Carolina,91.8,2013
+North Dakota,91.7,2013
+Ohio,89.5,2013
+Oklahoma,90.0,2013
+Oregon,98.9,2013
+Pennsylvania,98.6,2013
+Rhode Island,98.8,2013
+South Carolina,90.5,2013
+South Dakota,88.0,2013
+Tennessee,90.7,2013
+Texas,96.3,2013
+Utah,97.7,2013
+Vermont,100.9,2013
+Virginia,102.8,2013
+Washington,104.2,2013
+West Virginia,88.6,2013
+Wisconsin,93.2,2013
+Wyoming,96.0,2013
+Alabama,87.2,2014
+Alaska,106.3,2014
+Arizona,96.2,2014
+Arkansas,87.1,2014
+California,113.4,2014
+Colorado,102.5,2014
+Connecticut,108.6,2014
+Delaware,101.4,2014
+District of Columbia,118.0,2014
+Florida,99.4,2014
+Georgia,92.0,2014
+Hawaii,118.3,2014
+Idaho,93.6,2014
+Illinois,99.7,2014
+Indiana,91.0,2014
+Iowa,90.3,2014
+Kansas,90.7,2014
+Kentucky,88.3,2014
+Louisiana,91.0,2014
+Maine,97.4,2014
+Maryland,110.1,2014
+Massachusetts,106.9,2014
+Michigan,93.7,2014
+Minnesota,97.5,2014
+Mississippi,86.3,2014
+Missouri,89.5,2014
+Montana,94.5,2014
+Nebraska,90.5,2014
+Nevada,98.0,2014
+New Hampshire,105.2,2014
+New Jersey,114.0,2014
+New Mexico,95.1,2014
+New York,115.7,2014
+North Carolina,91.5,2014
+North Dakota,91.6,2014
+Ohio,89.2,2014
+Oklahoma,89.7,2014
+Oregon,99.2,2014
+Pennsylvania,98.0,2014
+Rhode Island,99.1,2014
+South Carolina,90.1,2014
+South Dakota,87.9,2014
+Tennessee,89.9,2014
+Texas,96.5,2014
+Utah,97.2,2014
+Vermont,101.8,2014
+Virginia,102.6,2014
+Washington,104.8,2014
+West Virginia,88.4,2014
+Wisconsin,93.3,2014
+Wyoming,96.6,2014
+Alabama,86.8,2015
+Alaska,105.6,2015
+Arizona,96.2,2015
+Arkansas,87.4,2015
+California,113.4,2015
+Colorado,103.2,2015
+Connecticut,108.7,2015
+Delaware,100.4,2015
+District of Columbia,117.0,2015
+Florida,99.5,2015
+Georgia,92.6,2015
+Hawaii,118.8,2015
+Idaho,93.4,2015
+Illinois,99.7,2015
+Indiana,90.7,2015
+Iowa,90.3,2015
+Kansas,90.4,2015
+Kentucky,88.6,2015
+Louisiana,90.6,2015
+Maine,98.0,2015
+Maryland,109.6,2015
+Massachusetts,106.9,2015
+Michigan,93.5,2015
+Minnesota,97.4,2015
+Mississippi,86.2,2015
+Missouri,89.3,2015
+Montana,94.8,2015
+Nebraska,90.6,2015
+Nevada,98.0,2015
+New Hampshire,105.0,2015
+New Jersey,113.4,2015
+New Mexico,94.4,2015
+New York,115.3,2015
+North Carolina,91.2,2015
+North Dakota,92.3,2015
+Ohio,89.2,2015
+Oklahoma,89.9,2015
+Oregon,99.2,2015
+Pennsylvania,97.9,2015
+Rhode Island,98.7,2015
+South Carolina,90.3,2015
+South Dakota,88.2,2015
+Tennessee,89.9,2015
+Texas,96.8,2015
+Utah,97.0,2015
+Vermont,101.6,2015
+Virginia,102.5,2015
+Washington,104.8,2015
+West Virginia,88.9,2015
+Wisconsin,93.1,2015
+Wyoming,96.2,2015
+Alabama,86.6,2016
+Alaska,105.4,2016
+Arizona,95.9,2016
+Arkansas,86.9,2016
+California,114.4,2016
+Colorado,103.0,2016
+Connecticut,108.7,2016
+Delaware,100.2,2016
+District of Columbia,115.9,2016
+Florida,99.7,2016
+Georgia,92.1,2016
+Hawaii,118.4,2016
+Idaho,93.0,2016
+Illinois,98.9,2016
+Indiana,90.3,2016
+Iowa,90.2,2016
+Kansas,90.5,2016
+Kentucky,87.8,2016
+Louisiana,90.4,2016
+Maine,98.4,2016
+Maryland,109.5,2016
+Massachusetts,107.8,2016
+Michigan,93.3,2016
+Minnesota,97.5,2016
+Mississippi,86.4,2016
+Missouri,89.5,2016
+Montana,94.1,2016
+Nebraska,90.5,2016
+Nevada,97.4,2016
+New Hampshire,105.9,2016
+New Jersey,113.2,2016
+New Mexico,93.6,2016
+New York,115.6,2016
+North Carolina,90.9,2016
+North Dakota,91.5,2016
+Ohio,89.3,2016
+Oklahoma,89.0,2016
+Oregon,99.8,2016
+Pennsylvania,98.4,2016
+Rhode Island,99.6,2016
+South Carolina,90.3,2016
+South Dakota,88.3,2016
+Tennessee,90.2,2016
+Texas,96.9,2016
+Utah,97.3,2016
+Vermont,101.6,2016
+Virginia,102.3,2016
+Washington,105.5,2016
+West Virginia,87.6,2016
+Wisconsin,92.8,2016
+Wyoming,96.7,2016
