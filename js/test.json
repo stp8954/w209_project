@@ -1,0 +1,69 @@
+ {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "title": "State Wage and RPP data",
+    "data": {
+        "url":"../data/wages_2007_2016_2.csv"
+    },
+    "transform": [
+    {"filter":{
+            "and": [
+                "datum.ST == 'WA'",
+                "datum.OCC_TITLE == 'Software Developers Applications'"
+            ]
+        }} 
+  ],
+    "vconcat": [
+        {
+            "encoding": {
+                "x": {
+                    "axis": { "title": "Date"},
+                    "field": "year",
+                    "type": "temporal"
+                },
+                "y": {
+                    "axis": { "title": "Median Salary" },
+                    "field": "A_MEDIAN",
+                    "scale": { "domain": [0, 200000] },
+                    "type": "quantitative"
+                }
+            },
+            "width": 600,
+            "mark": "area",
+            "selection": { "brush": { "encodings": ["x"], "type": "interval" } }
+        }, {
+            "encoding": {
+                "x": {
+                    "axis": { "title": "Date" },
+                    "field": "year",
+                    "type": "temporal"
+                },
+                "y": {
+                    "axis": { "title": "Median Salary" },
+                    "field": "CPI",
+                    "scale": { "domain": [50, 150] },
+                    "type": "quantitative"
+                }
+            },
+            "width": 600,
+            "mark": { "type": "line", "color": "green", "point": { "color": "red" } },
+            "transform": [{ "filter": { "selection": "brush" } }]
+        }, {
+            "encoding": {
+                "x": {
+                    "axis": { "title": "Date" },
+                    "field": "year",
+                    "type": "temporal"
+                },
+                "y": {
+                    "axis": { "title": "Adjusted Median Salary" },
+                    "field": "A_MEDIAN_ADJ",
+                    "scale": { "domain": [0, 200000] },
+                    "type": "quantitative"
+                }
+            },
+            "width": 600,
+            "mark": { "type": "line", "color": "green", "point": { "color": "red" } },
+            "transform": [{ "filter": { "selection": "brush" } }]
+        }
+    ]
+}

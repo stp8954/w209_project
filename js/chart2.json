@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "description": "A bar graph showing the scores of the top 5 students. This shows an example of the window transform, for how the top K (5) can be filtered, and also how a rank can be computed for each student.",
+    "data": {
+        "url":"../data/wages_2007_2016_2.csv"
+    },
+    "width": 600,
+    "transform": [
+        {
+            "window": [{
+                "op": "rank",
+                "as": "rank"
+            }],
+            "sort": [{ "field": "A_MEDIAN_ADJ", "order": "descending" }]
+        }, {
+            "filter": {
+                "and": [
+                   {
+                    "field": "year",
+                    "equal": "2016"
+                },
+                    {
+                        "field": "ST",
+                        "equal": "WA"
+                    }
+                    
+                ]
+            } 
+        }
+    ],
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "A_MEDIAN_ADJ",
+            "type": "quantitative"
+        },
+        "y": {
+            "field": "OCC_TITLE",
+            "type": "nominal",
+            "sort": { "field": "A_MEDIAN_ADJ","op": "mean", "order": "descending" }
+        }
+    }
+}
