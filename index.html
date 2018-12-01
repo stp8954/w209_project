@@ -23,9 +23,9 @@
     <!-- Custom styles for this template -->
     <link href="css/agency.css" rel="stylesheet">
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega@4.3.0/build/vega.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc8/build/vega-lite.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.24.2/build/vega-embed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm//vega@3.3.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm//vega-lite@2.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm//vega-embed@3.14"></script>
 
   </head>
 
@@ -371,7 +371,56 @@
       </div>
     </section>
 
-    
+    <!--Healthcare-->
+    <section id="health">
+      <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Healthcare Costs</h2>
+              <h3 class="section-subheading text-muted">How do out of pocket healthcare costs vary by state?</h3>
+            </div>
+          </div>
+          
+          <h3>How to Use</h3>
+          <ul>
+            <li>Individual states are selectable by clicking on the bar, line, or colored circle in the legend.</li>
+            <li>Mouse-over an individual bar or point to see additional details</li>
+            <li>Multiple states can be selected by holding down the "shift" key and clicking on a bar or state in the legend</li>
+            <li>Click on whitespace within the charts to reset selections</li>
+          </ul>
+
+          <div id="vis"></div>
+          <script type="text/javascript">
+            var spec = "./healthcare-viz-spec.json";
+            //console.log(spec);
+        
+            var embed_opt = {"mode": "vega-lite"};
+        
+            function showError(el, error){
+              el.innerHTML = ('<div class="error">'
+                              + '<p>JavaScript Error: ' + error.message + '</p>'
+                              + "<p>This usually means there's a typo in your chart specification. "
+                              + "See the javascript console for the full traceback.</p>"
+                              + '</div>');
+              throw error;
+            }
+            const el = document.getElementById('vis');
+            vegaEmbed("#vis", spec, embed_opt)
+              .catch(error => showError(el, error));           
+          </script>
+
+          <h3>Insights</h3>
+          <ul>
+            <li>Overall, healthcare costs are trending upward in all states.</li>
+            <li>In the last year, healthcare was the most expensive in Alaska, people expecting to relocate to that state can expect to spend more on healthcare expenses.</li>
+            <li>In the last year, healthcare was the least expensive in Utah, people expecting to relocate to Utah can expect a reduction in their healthcare expenses.</li>
+            <li>Relative to other states, growth of healthcare costs in the District of Columbia is relatively flat.</li>
+          </ul>
+      </div>
+      
+
+
+    </section>
 
     <!-- Team -->
     <section class="bg-light" id="team">
