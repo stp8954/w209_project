@@ -381,7 +381,32 @@
             </div>
           </div>
           
-          <h3>How to Use</h3>
+          <p>Healthcare spending is a major part of a person's annual expenses. These costs can vary state by state. People moving from one state to another for various reasons such as job relocation may be concerned that they may pay more in healthcare costs compared to their home state.</p>
+          <h4>Healthcare Spending Over Time by State</h4>
+          <div id="vis-horiz"></div>
+          <script type="text/javascript">
+            var spec2 = "./horizon-charts-spec.json";
+            //console.log(spec);
+        
+            var embed_opt2 = {"mode": "vega-lite"};
+        
+            function showError(el2, error){
+              el2.innerHTML = ('<div class="error">'
+                              + '<p>JavaScript Error: ' + error.message + '</p>'
+                              + "<p>This usually means there's a typo in your chart specification. "
+                              + "See the javascript console for the full traceback.</p>"
+                              + '</div>');
+              throw error;
+            }
+            const el2 = document.getElementById('vis-horiz');
+            vegaEmbed("#vis-horiz", spec2, embed_opt2)
+              .catch(error => showError(el2, error));           
+          </script>
+
+        
+          
+          <h4>Interactive Healthcare Cost Comparison</h4>
+          <h6>How to Use</h6>
           <ul>
             <li>Individual states are selectable by clicking on the bar, line, or colored circle in the legend.</li>
             <li>Mouse-over an individual bar or point to see additional details</li>
@@ -412,9 +437,9 @@
           <h3>Insights</h3>
           <ul>
             <li>Overall, healthcare costs are trending upward in all states.</li>
-            <li>In the last year, healthcare was the most expensive in Alaska, people expecting to relocate to that state can expect to spend more on healthcare expenses.</li>
+            <li>In the last year, healthcare was the most expensive in Alaska, people expecting to relocate to that state can expect to spend more on healthcare expenses. Other states with relatively expensive healthcare are the District of Columbia and Massachusetts</li>
             <li>In the last year, healthcare was the least expensive in Utah, people expecting to relocate to Utah can expect a reduction in their healthcare expenses.</li>
-            <li>Relative to other states, growth of healthcare costs in the District of Columbia is relatively flat.</li>
+            <li>Relative to other states, growth of healthcare costs in the District of Columbia is relatively flat but it is among the most expensive in terms of healthcare costs.</li>
           </ul>
       </div>
       
@@ -428,15 +453,15 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted">UC Berkeley School of Information</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
+              <!--<img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">-->
+              <h4>Jason Liu</h4>
+              <p class="text-muted"><a href = "mailto:jasonliu@ischool.berkeley.edu">jasonliu@ischool.berkeley.edu</a></p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -458,9 +483,9 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
+              <!--<img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">-->
+              <h4>Keivn (Ye) Pang</h4>
+              <p class="text-muted"><a href = "mailto:email@ischool.berkeley.edu">email@ischool.berkeley.edu</a></p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -482,9 +507,9 @@
           </div>
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
+              <!--<img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">-->
+              <h4>Sanket Patel</h4>
+              <p class="text-muted"><a href = "mailto:email@ischool.berkeley.edu">email@ischool.berkeley.edu</a></p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <a href="#">
@@ -507,7 +532,7 @@
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+            <p class="large text-muted"></p>
           </div>
         </div>
       </div>
