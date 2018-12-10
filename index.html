@@ -414,24 +414,24 @@
             <li>Click on whitespace within the charts to reset selections</li>
           </ul>
 
-          <div id="vis"></div>
+          <div id="vis-healthcare"></div>
           <script type="text/javascript">
-            var spec = "./healthcare-viz-spec.json";
+            var spec_healthcare = "./healthcare-viz-spec.json";
             //console.log(spec);
         
-            var embed_opt = {"mode": "vega-lite"};
+            var embed_opt_hc = {"mode": "vega-lite"};
         
-            function showError(el, error){
-              el.innerHTML = ('<div class="error">'
+            function showError(el_hc, error){
+              el_hc.innerHTML = ('<div class="error">'
                               + '<p>JavaScript Error: ' + error.message + '</p>'
                               + "<p>This usually means there's a typo in your chart specification. "
                               + "See the javascript console for the full traceback.</p>"
                               + '</div>');
               throw error;
             }
-            const el = document.getElementById('vis');
-            vegaEmbed("#vis", spec, embed_opt)
-              .catch(error => showError(el, error));           
+            const el_hc = document.getElementById('vis');
+            vegaEmbed("#vis-healthcare", spec_healthcare, embed_opt_hc)
+              .catch(error => showError(el_hc, error));           
           </script>
 
           <h3>Insights</h3>
