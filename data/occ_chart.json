@@ -1,0 +1,194 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v3.json",
+    "autosize": "pad",
+    "padding": { "left": 5, "right": 5
+    },
+    "width": 1000,
+    "height": 800,
+    "title": {
+        "text": "States wage growth over the last decade"
+    },
+    "style": "cell",
+    "data": [
+        {
+            "name": "selector035_store"
+        },
+        {
+            "name": "source_0"
+        },
+        {
+            "name": "data_0",
+            "source": "source_0",
+            "transform": [
+                {
+                    "type": "filter",
+                    "expr": "datum[\"A_MEDIAN_ADJ\"] !== null && !isNaN(datum[\"A_MEDIAN_ADJ\"]) && datum[\"YEAR\"] === '2016'"
+                }
+            ]
+        }
+    ],
+    "signals": [
+        {
+            "name": "unit",
+            "value": {},
+            "on": [
+                {
+                    "events": "mousemove",
+                    "update": "isTuple(group()) ? group() : unit"
+                }
+            ]
+        },
+        {
+            "name": "selector035",
+            "update": "data(\"selector035_store\").length && {STATE: data(\"selector035_store\")[0].values[0]}"
+        },
+        {
+            "name": "selector035_tuple",
+            "value": {},
+            "on": [
+                {
+                    "events": [
+                        {
+                            "source": "scope",
+                            "type": "click"
+                        }
+                    ],
+                    "update": "datum && item().mark.marktype !== 'group' ? {unit: \"\", encodings: [\"y\"], fields: [\"STATE\"], values: [datum[\"STATE\"]]} : null",
+                    "force": true
+                }
+            ]
+        },
+        {
+            "name": "selector035_modify",
+            "on": [
+                {
+                    "events": {
+                        "signal": "selector035_tuple"
+                    },
+                    "update": "modify(\"selector035_store\", selector035_tuple, true)"
+                }
+            ]
+        }
+    ],
+    "marks": [
+        {
+            "name": "marks",
+            "type": "rect",
+            "style": [
+                "bar"
+            ],
+            "from": {
+                "data": "data_0"
+            },
+            "encode": {
+                "update": {
+                    "fill": [
+                        {
+                            "test": "!(length(data(\"selector035_store\"))) || (vlSingle(\"selector035_store\", datum))",
+                            "value": "steelblue"
+                        },
+                        {
+                            "value": "lightgray"
+                        }
+                    ],
+                    "x": {
+                        "scale": "x",
+                        "field": "A_MEDIAN_ADJ"
+                    },
+                    "x2": {
+                        "scale": "x",
+                        "value": 0
+                    },
+                    "yc": {
+                        "scale": "y",
+                        "field": "STATE",
+                        "band": 0.5
+                    },
+                    "height": {
+                        "value": 12
+                    }
+                }
+            }
+        }
+    ],
+    "scales": [
+        {
+            "name": "x",
+            "type": "linear",
+            "domain": {
+                "data": "data_0",
+                "field": "A_MEDIAN_ADJ"
+            },
+            "range": [
+                0,
+                {
+                    "signal": "width"
+                }
+            ],
+            "nice": true,
+            "zero": true
+        },
+        {
+            "name": "y",
+            "type": "band",
+            "domain": {
+                "data": "source_0",
+                "field": "STATE",
+                "sort": {
+                    "op": "max",
+                    "field": "A_MEDIAN_ADJ",
+                    "order": "descending"
+                }
+            },
+            "range": [
+                0,
+                {
+                    "signal": "height"
+                }
+            ],
+            "paddingInner": 0.1,
+            "paddingOuter": 0.05
+        }
+    ],
+    "axes": [
+        {
+            "scale": "x",
+            "orient": "bottom",
+            "grid": false,
+            "title": "%age wage growth",
+            "labelFlush": true,
+            "labelOverlap": true,
+            "tickCount": {
+                "signal": "ceil(width/40)"
+            },
+            "zindex": 1
+        },
+        {
+            "scale": "x",
+            "orient": "bottom",
+            "grid": true,
+            "tickCount": {
+                "signal": "ceil(width/40)"
+            },
+            "gridScale": "y",
+            "domain": false,
+            "labels": false,
+            "maxExtent": 0,
+            "minExtent": 0,
+            "ticks": false,
+            "zindex": 0
+        },
+        {
+            "scale": "y",
+            "orient": "left",
+            "grid": false,
+            "title": "States",
+            "zindex": 1
+        }
+    ],
+    "config": {
+        "axisY": {
+            "minExtent": 30
+        }
+    }
+}
