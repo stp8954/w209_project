@@ -162,8 +162,8 @@ var wage_chart = {
 
 var occ_state_rank = "./data/occ_state_rank.json";
 
-
 var cpi_delta_chart_vega_lite = "./data/cpi_delta_chart.json";
+var wage_comp_chart = "./data/wage_comp.json";
 
 var wages, delta, st;
 var state = 'Washington';
@@ -172,6 +172,7 @@ var occupation = 'software developers applications';
 set_occupation = function (occ) {
   occupation = occ;
   update_occ_state_rank_chart();
+  update_wage_comparison_chart();
   //update_occ_charts();
 };
 
@@ -630,6 +631,24 @@ function update_occ_state_rank_chart() {
   document.getElementById("occ_title").innerHTML = `<h4> State ranked by adjusted wage for <mark>${occupation}</mark> occupation</h4>`
 }
 
+function update_wage_comparison_chart()
+{
+    var wage_all =  wages.filter(function (d) { return (d.OCC_TITLE == occupation) }).map(function (d) {
+      d.A_MEDIAN_ADJ = parseFloat(d.A_MEDIAN_ADJ)
+      return d;
+    });
+
+    vegaEmbed("#Wage_comparison", wage_comp_chart, { theme: 'fivethirtyeight' })
+    .then((res) => {
+      v = res.view
+        .insert("wage_comp", wage_all)
+      v.run();
+    }
+    );
+
+    document.getElementById("Wage_comparison_header").innerHTML = `<h4>Wage comparison for <mark>${occupation}</mark> across US </h4>`
+}
+
 function update_texts() {
   document.getElementById("yearly_wage_text").innerHTML = get_yearly_wage_text(occupation, state);
   document.getElementById("best_wage_text").innerHTML = get_best_paid_jobs(state);
@@ -672,6 +691,7 @@ function analyze(error, wages_data1,
   update_cpi_delta_chart();
   update_occ_state_rank_chart();
   update_texts();
+  update_wage_comparison_chart();
   //updateCharts();
   //update_occ_charts();
 };

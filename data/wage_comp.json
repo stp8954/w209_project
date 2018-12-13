@@ -1,0 +1,220 @@
+{
+    "config": {"view": {"width": 1200, "height": 500}},
+    "padding": {"left":30, "right":200, "bottom":250, "top":20},
+    "hconcat": [
+      {
+        "layer": [
+          {
+            "data": {
+              "name":"wage_comp"
+            },
+            "mark": "line",
+            "encoding": {
+              "color": {
+                "condition": {
+                  "type": "nominal",
+                  "field": "STATE",
+                  "legend": null,
+                  "selection": "selector128"
+                },
+                "value": "lightgray"
+              },
+              "size": {
+                "condition": {"value": 2, "selection": {"not": "selector127"}},
+                "value": 4
+              },
+              "tooltip": [
+                {"type": "nominal", "field": "STATE", "title": "State"},
+                {"type": "nominal", "field": "A_MEDIAN", "title": "Median Wage"},
+                {
+                  "type": "nominal",
+                  "field": "A_MEDIAN_ADJ",
+                  "title": "Adj Median Wage"
+                }
+              ],
+              "x": {"type": "nominal", "field": "YEAR"},
+              "y": {
+                "type": "quantitative",
+                "axis": {"title": "Adjusted Annual Median Wage (US Dollars)"},
+                "field": "A_MEDIAN"
+              }
+            },
+            "height": 300,
+            "selection": {
+              "selector127": {
+                "type": "single",
+                "on": "mouseover",
+                "fields": ["STATE"],
+                "nearest": true,
+                "resolve": "global",
+                "empty": "all"
+              }
+            },
+            "transform": [{"filter": {"selection": "selector128"}}],
+            "width": 650
+          },
+          {
+            "data": {
+                "name":"wage_comp"
+            },
+            "mark": {"type": "point", "size": 80},
+            "encoding": {
+              "color": {
+                "condition": {
+                  "type": "nominal",
+                  "field": "STATE",
+                  "legend": null,
+                  "selection": "selector128"
+                },
+                "value": "lightgray"
+              },
+              "tooltip": [
+                {"type": "nominal", "field": "STATE", "title": "State"},
+                {"type": "nominal", "field": "A_MEDIAN", "title": "Median Wage"},
+                {
+                  "type": "nominal",
+                  "field": "A_MEDIAN_ADJ",
+                  "title": "Adj Median Wage"
+                }
+              ],
+              "x": {"type": "nominal", "field": "YEAR"},
+              "y": {
+                "type": "quantitative",
+                "axis": {"title": "Adjusted Annual Median Wage (US Dollars)"},
+                "field": "A_MEDIAN"
+              }
+            },
+            "height": 300,
+            "transform": [{"filter": {"selection": "selector128"}}],
+            "width": 650
+          }
+        ]
+      },
+      {
+        "data": {
+            "name":"wage_comp"
+        },
+        "mark": "point",
+        "encoding": {
+          "color": {
+            "condition": {
+              "type": "nominal",
+              "field": "STATE",
+              "legend": null,
+              "selection": "selector128"
+            },
+            "value": "lightgray"
+          },
+          "y": {"type": "nominal", "axis": {"orient": "right"}, "field": "STATE"}
+        },
+        "selection": {
+          "selector128": {
+            "type": "multi",
+            "fields": ["STATE"],
+            "on": "click",
+            "toggle": "event.shiftKey",
+            "resolve": "global",
+            "empty": "all"
+          }
+        },
+        "transform": [
+          {
+            "filter": {
+              "field": "STATE",
+              "oneOf": [
+                "Alabama",
+                "Alaska",
+                "Arizona",
+                "Arkansas",
+                "California",
+                "Colorado",
+                "Connecticut",
+                "Delaware",
+                "District of Columbia",
+                "Florida",
+                "Georgia",
+                "Hawaii",
+                "Idaho",
+                "Illinois",
+                "Indiana",
+                "Iowa",
+                "Kansas",
+                "Kentucky",
+                "Louisiana",
+                "Maine",
+                "Maryland",
+                "Massachusetts",
+                "Michigan",
+                "Minnesota",
+                "Mississippi",
+                "Missouri"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "data": {
+            "name":"wage_comp"
+        },
+        "mark": "point",
+        "encoding": {
+          "color": {
+            "condition": {
+              "type": "nominal",
+              "field": "STATE",
+              "legend": null,
+              "selection": "selector128"
+            },
+            "value": "lightgray"
+          },
+          "y": {"type": "nominal", "axis": {"orient": "right"}, "field": "STATE"}
+        },
+        "selection": {
+          "selector128": {
+            "type": "multi",
+            "fields": ["STATE"],
+            "on": "click",
+            "toggle": "event.shiftKey",
+            "resolve": "global",
+            "empty": "all"
+          }
+        },
+        "transform": [
+          {
+            "filter": {
+              "field": "STATE",
+              "oneOf": [
+                "Montana",
+                "Nebraska",
+                "Nevada",
+                "New Hampshire",
+                "New Jersey",
+                "New Mexico",
+                "New York",
+                "North Carolina",
+                "North Dakota",
+                "Ohio",
+                "Oklahoma",
+                "Oregon",
+                "Pennsylvania",
+                "Rhode Island",
+                "South Carolina",
+                "South Dakota",
+                "Tennessee",
+                "Texas",
+                "Utah",
+                "Vermont",
+                "Virginia",
+                "Washington",
+                "West Virginia",
+                "Wisconsin",
+                "Wyoming"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"
+  }
