@@ -1,7 +1,7 @@
 ![Cost Of Living](gifs/final_project.gif "Cost Of Living")
 
 ## Project: Cost of Living Analysis in US
-## Data Science w209. Data Visualization, Fall 2018 (Section 4)
+## W209.4 | Data Visualization | Fall 2018
 
 ### University of California, Berkeley
 ### School of Information
