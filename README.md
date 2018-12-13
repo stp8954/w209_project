@@ -25,7 +25,10 @@
 * Final Presentation: http://people.ischool.berkeley.edu/~yp2182/w209_FP/slides.html 
 * Project Report: https://docs.google.com/document/d/1bc_JSNnOC5k7YktEwt2l3sjuB1J_uxAMs43FXeyNl9Q/edit#heading=h.gjdgxs
 
-Data: <a href="https://github.com/stp8954/w209_project/tree/master/data" target="_blank">Final data csv's</a>
+Data: 
+* Time series data from 1997 to 2017 on per capita expenditure by state provided by BEA.
+* Annual wage data exported from Bureau of Labor Statistics
+* <a href="https://github.com/stp8954/w209_project/tree/master/data" target="_blank">Cleaned Datasets</a>
 
 
 #### About:
