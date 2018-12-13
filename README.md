@@ -21,9 +21,9 @@
 * Demo Video: 
 * School Project Page:
 * Project Proposal: https://github.com/stp8954/w209_project/blob/master/pdfs/W209%20Project%20Proposal.pdf
-* Midterm Presentation: https://docs.google.com/presentation/d/1W0XMp5cnLuepLueiBg5CLQx2bVkGaOcdl8ROSbz29YA/edit#slide=id.p
+* Midterm Presentation: https://github.com/stp8954/w209_project/blob/master/pdfs/W209.4_Midterm_Presentation.pdf
 * Final Presentation: http://people.ischool.berkeley.edu/~yp2182/w209_FP/slides.html 
-* Project Report: https://docs.google.com/document/d/1bc_JSNnOC5k7YktEwt2l3sjuB1J_uxAMs43FXeyNl9Q/edit#heading=h.gjdgxs
+* Project Report: https://github.com/stp8954/w209_project/blob/master/pdfs/CoL_FinalProjectReport.pdf
 
 Data: 
 * Time series data from 1997 to 2017 on per capita expenditure by state provided by BEA.
