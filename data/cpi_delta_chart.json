@@ -1,0 +1,80 @@
+{
+    "config": {"view": {"width": 1000, "height": 600}},
+    "autosize": "pad",
+    "padding": {"left":80, "right":20, "bottom":20, "top":20},
+    "hconcat": [
+      {
+        "data": {
+          "name":"cpi_delta"
+        },
+        "mark": "bar",
+        "encoding": {
+          "color": {
+            "condition": {"value": "steelblue", "test": "(datum.cpi_delta > 0)"},
+            "value": "orange"
+          },
+          "tooltip": [
+            {"type": "nominal", "field": "STATE"},
+            {"type": "quantitative", "field": "cpi_delta"}
+          ],
+          "x": {
+            "type": "quantitative",
+            "axis": {
+              "offset": 2,
+              "orient": "top",
+              "title": "% increase in CPI (2007-2016)"
+            },
+            "field": "cpi_delta"
+          },
+          "y": {
+            "type": "nominal",
+            "axis": {"title": "States", "titlePadding": 0},
+            "field": "STATE",
+            "sort": {"op": "max", "field": "cpi_delta", "order": "ascending"}
+          }
+        },
+        "height": 600,
+        "selection": {
+          "selector004": {
+            "type": "single",
+            "encodings": ["y"],
+            "on": "mouseover",
+            "empty": "all",
+            "resolve": "global"
+          }
+        },
+        "width": 400
+      },
+      {
+        "data": {
+          "name":"cpi_2016"
+        },
+        "mark": "bar",
+        "encoding": {
+          "color": {
+            "condition": {"value": "steelblue", "selection": "selector004"},
+            "value": "lightgray"
+          },
+          "tooltip": [
+            {"type": "nominal", "field": "STATE"},
+            {"type": "quantitative", "field": "CPI"}
+          ],
+          "x": {
+            "type": "quantitative",
+            "axis": {"offset": 2, "orient": "top", "title": "2016 CPI"},
+            "field": "CPI"
+          },
+          "y": {
+            "type": "nominal",
+            "axis": {"title": "States", "titlePadding": 0},
+            "field": "STATE",
+            "sort": {"op": "max", "field": "CPI", "order": "descending"}
+          }
+        },
+        "height": 600,
+        "width": 400
+      }
+    ],
+    "spacing": 100,
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"
+  }

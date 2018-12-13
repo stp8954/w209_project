@@ -1,0 +1,43 @@
+{
+  "config": {"view": {"width": 400, "height": 300}},
+  "padding": {"left":30, "right":30, "bottom":10, "top":20},
+  "data": {
+    "name":"occ_rank"
+  },
+  "mark": "bar",
+  "encoding": {
+    "color": {
+      "condition": {
+        "value": "orange",
+        "test": "(datum.STATE === 'Washington')"
+      },
+      "value": "steelblue"
+    },
+    "tooltip": [
+      {"type": "nominal", "field": "STATE", "title": "State"},
+      {"type": "nominal", "field": "A_MEDIAN", "title": "Median Wage"},
+      {"type": "nominal", "field": "A_MEDIAN_ADJ", "title": "Adj Median Wage"}
+    ],
+    "x": {
+      "type": "nominal",
+      "axis": {"labelAngle": -45, "title": "States"},
+      "field": "STATE",
+      "sort": {"op": "max", "field": "A_MEDIAN_ADJ", "order": "descending"}
+    },
+    "y": {
+      "type": "quantitative",
+      "axis": {"title": "Wage adjusted for inflation in $"},
+      "field": "A_MEDIAN_ADJ"
+    }
+  },
+  "selection": {
+    "selector029": {
+      "type": "single",
+      "encodings": ["y"],
+      "on": "mouseover",
+      "empty": "all",
+      "resolve": "global"
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json"
+}
