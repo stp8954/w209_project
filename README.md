@@ -19,7 +19,14 @@
 #### Important Links:
 * Website: http://people.ischool.berkeley.edu/~stp8954/
 * Demo Video: 
-* School Project Page: 
+* School Project Page:
+* Project Proposal:
+* Midterm Presentation: https://docs.google.com/presentation/d/1W0XMp5cnLuepLueiBg5CLQx2bVkGaOcdl8ROSbz29YA/edit#slide=id.p
+* Final Presentation:
+* Project Report: 
+
+Data: <a href="https://github.com/stp8954/w209_project/tree/master/data" target="_blank">Final data csv's</a>
+
 
 #### About:
 While a dollar bill looks and feels the same all over the United States, its value is often very different depending on where it is spent. Nearly a decade after the 2008 recession and housing crash, much of the US has fully recovered. As a result, most of the country is experiencing rise in cost of living. But the rise is not consistent everywhere. The price of housing, food, and services vary considerably across the country. To shed light on these differences across every state we plan to analyze and visualize the trends in the cost of various entities that influence the overall cost of living.          
