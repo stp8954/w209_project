@@ -20,10 +20,10 @@
 * Website: http://people.ischool.berkeley.edu/~stp8954/
 * Demo Video: 
 * School Project Page:
-* Project Proposal:
+* Project Proposal: https://github.com/stp8954/w209_project/blob/master/pdfs/W209%20Project%20Proposal.pdf
 * Midterm Presentation: https://docs.google.com/presentation/d/1W0XMp5cnLuepLueiBg5CLQx2bVkGaOcdl8ROSbz29YA/edit#slide=id.p
-* Final Presentation:
-* Project Report: 
+* Final Presentation: http://people.ischool.berkeley.edu/~yp2182/w209_FP/slides.html 
+* Project Report: https://docs.google.com/document/d/1bc_JSNnOC5k7YktEwt2l3sjuB1J_uxAMs43FXeyNl9Q/edit#heading=h.gjdgxs
 
 Data: <a href="https://github.com/stp8954/w209_project/tree/master/data" target="_blank">Final data csv's</a>
 
