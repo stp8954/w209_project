@@ -28,6 +28,7 @@
 Data: 
 * Time series data from 1997 to 2017 on per capita expenditure by state provided by BEA.
 * Annual wage data exported from Bureau of Labor Statistics
+* Consumer Price Index for each state from 2007 to 2016
 * <a href="https://github.com/stp8954/w209_project/tree/master/data" target="_blank">Cleaned Datasets</a>
 
 
