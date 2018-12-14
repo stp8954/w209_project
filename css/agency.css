@@ -768,10 +768,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 .legend {
-	position: absolute;
-  left:200px;
-  top: 1000px;
+  position: absolute;
+left:30px;
+top: 1020px;
 }
+
 .axis text {
 	font: 10px sans-serif;
 }
@@ -784,20 +785,21 @@ div.tooltip {
   position: absolute;
   left: 75px;
   text-align: center;
-  height: 12px;
+  height: 40px;
   padding: 8px;
   font-size: 13px;
   font-family: 'Proxima-Nova', sans-serif;
   background: #FFFFFF;
   border: 1px solid #989898;
   pointer-events: none;
-}
-#ExpList { 
-	border-collapse: collapse; 
-	position: absolute;
-  left:1500px;
-  top:900px;
-  font-size: 0.6rem !important;
+ }
+
+#ExpList {
+  border-collapse: collapse;
+  position: absolute;
+left:900px;
+top:920px;
+font-size: 0.6rem !important;
 }
 #ExpList th { background-color: #CCC; }
 #ExpList td, 
@@ -818,4 +820,8 @@ margin: 60px;
 
 #service_d3 h3{
   padding: 0 0 60px;
+}
+
+.sec1{
+  margin: 5% 13%
 }

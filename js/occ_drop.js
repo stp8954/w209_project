@@ -5,7 +5,7 @@
  
 var occupations = [];
 
-d3.csv('/data/occupation.csv', function(data){
+d3.csv('./data/occupation.csv', function(data){
 
    data.forEach(function(d){
     occupations.push(d.Occupations);
