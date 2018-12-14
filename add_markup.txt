@@ -1,57 +1,69 @@
-<h4>Cost Of Living Exploration</h4>
-<p>To have an overview of living cost differeces across the United States and over time.</p>
-<h6>How to Use</h6>
-<ul>
-    <li>Please slide left or right with the slider control to change the Year.</li>
-    <li>Values are in dollars and color coded according to the legend on the left. </li>
-    <li>State tiles have hover over tooltips.</li>
-    <li>Use the table on the right for sorting on state name or per capita expenditures for the selected year.</li>
-</ul>
+<!-- Service -->
+ <section id="Service">
+     <div id="service_d3">
+       <h4>Cost Of Living Exploration</h4>
+       <p>To have an overview of living cost differeces across the United States and over time.</p>
+       <h6>How to Use</h6>
+       <ul>
+           <li>Please slide left or right with the slider control to change the Year.</li>
+           <li>Values are in dollars and color coded according to the legend on the left. </li>
+           <li>State tiles have hover over tooltips.</li>
+           <li>Use the table on the right for sorting on state name or per capita expenditures for the selected year.</li>
+       </ul>
+       <label id='sliderLabel' for='year'><strong>1997</strong></label>
+       <input type="range" id="year" step="1" value="2017" min="1997" max="2017" onchange=updateMap(value)>
+       <label id='sliderLabel' for='year'><strong>2017</strong></label>
+     </div>
+     <script src="./js/service.js"></script>
+     <p>
+       <h4>Expenditures By Category</h4>
+       <p>To break down expenditures and show individual categorical porportions for the past 10 years.</p>
+       <h6>How to Use</h6>
+       <ul>
+           <li>Please slide left or right with the slider control to change the Year.</li>
+           <li>The y-axis display values in current dollars.</li>
+           <li>Durable Goods include the following:
+               <ul>
+                   <li>Motor vehicles and parts</li>
+                   <li>Furnishings and durable household equipment</li>
+                   <li>Recreational goods and vehicles</li>
+                   <li>Other durable goods</li>
+               </ul>
+           </li>
+           <li>Nondurable Goods include the following:
+               <ul>
+                   <li>Food and beverages purchased for off-premises consumption</li>
+                   <li>Clothing and footwear</li>
+                   <li>Gasoline and other energy goods</li>
+                   <li>Other nondurable goods</li>
+               </ul>
+           </li>
+           <li>Services include the following:
+               <ul>
+                   <li>Housing and utilities</li>
+                   <li>Health care</li>
+                   <li>Transportation services</li>
+                   <li>Recreation services</li>
+                   <li>Food services and accommodations</li>
+                   <li>Financial services and insurance</li>
+                   <li>ThirdParty Financed Expenditures</li>
+                   <li>Other services</li>
+               </ul>
+           </li>
+       </ul>
+     </p>
+     <div id="task1_3_vis"></div>
+     <script src="./js/task1_3.js"></script>
 
-Please show map + table, remove the original instruction. 
-
-<h4>Expenditures By Category</h4>
-<p>To break down expenditures and show individual categorical porportions for the past 10 years.</p>
-<h6>How to Use</h6>
-<ul>
-    <li>Please slide left or right with the slider control to change the Year.</li>
-    <li>The y-axis display values in current dollars.</li>
-    <li>Durable Goods include the following: 
-        <ul>
-            <li>Motor vehicles and parts</li>
-            <li>Furnishings and durable household equipment</li>
-            <li>Recreational goods and vehicles</li>
-            <li>Other durable goods</li>
-        </ul>
-    </li>
-    <li>Nondurable Goods include the following: 
-        <ul>
-            <li>Food and beverages purchased for off-premises consumption</li>
-            <li>Clothing and footwear</li>
-            <li>Gasoline and other energy goods</li>
-            <li>Other nondurable goods</li>
-        </ul>
-    </li>
-    <li>Services include the following: 
-        <ul>
-            <li>Housing and utilities</li>
-            <li>Health care</li>
-            <li>Transportation services</li>
-            <li>Recreation services</li>
-            <li>Food services and accommodations</li>
-            <li>Financial services and insurance</li>
-            <li>ThirdParty Financed Expenditures</li>
-            <li>Other services</li>
-        </ul>
-    </li>
-</ul>
-
-Please show the other 2 viz. 
-
-<h4>Insights</h4>
-<ul>
-    <li>Cost of living in North Dakota is rising fast!</li>
-    <li>Overall, California is not so bad, except for housing?</li>
-    <li>Service expenditures are rising a lot faster than Goods based costs!</li>
-    <li>Southwest states seem more affordable...</li>
-</ul>
+     <div id="task1_1_vis"></div>
+     <script src="./js/task1_1.js"></script>
+     <p>
+       <h4>Insights</h4>
+       <ul>
+           <li>Cost of living in North Dakota is rising fast!</li>
+           <li>Overall, California is not so bad, except for housing?</li>
+           <li>Service expenditures are rising a lot faster than Goods based costs!</li>
+           <li>Southwest states seem more affordable...</li>
+       </ul>
+     </p>
+ </section>
