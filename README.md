@@ -11,14 +11,14 @@
 
 **Authors**:
 * [Jason Liu] // jasonliu@ischool.berkeley.edu
-* [Keivn (Ye) Pang] // yp2182@ischool.berkeley.edu
+* [Kevin Pang] // yp2182@ischool.berkeley.edu
 * [Sanket Patel] // stp8954@ischool.berkeley.edu
 
 
 
 #### Important Links:
 * Website: http://people.ischool.berkeley.edu/~stp8954/
-* Demo Video: 
+* Demo Video: https://youtu.be/YLY6LapkAp4
 * School Project Page: https://www.ischool.berkeley.edu/projects/2018/cost-living-over-time
 * Project Proposal: https://github.com/stp8954/w209_project/blob/master/pdfs/W209%20Project%20Proposal.pdf
 * Midterm Presentation: https://github.com/stp8954/w209_project/blob/master/pdfs/W209.4_Midterm_Presentation.pdf
